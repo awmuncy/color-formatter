@@ -1,4 +1,5 @@
 <?php
+
   function rgbToHsl($r, $g, $b){
     $r = $r / 255;
     $g = $g / 255;
@@ -39,11 +40,3 @@
   
     return $array[0] . ", " . $array[1] . ", " . $array[2];
   }
-
-
-
-
-?>
-
-<h1 style="color: hsl(<?=rgbToHsl(184,64,25);?>);">Hello: HSL</h1>
-<h1 style="color: rgb(184,64,25);">Hello: RGB</h1>
